@@ -35,7 +35,7 @@ function aFunction1() {
     
     //a fuggveny mindenkeppen returnol ha lefuttatjuk ha nem adjuk meg mit/return akk undefined
     
-    return "this is a function"
+    return "this is a function" //*return lezarja a sorunkat, alatta levo dolgok nem futnak le
 }
 
 console.log(aFunction1());
@@ -95,3 +95,28 @@ function findMax() {
 //a fuggvenynek a beepitett objectumait nevezzuk argumentum objectumnak
 //<-SAJAT
 
+if(true){
+    //ide jon ha teljesul a feltetel
+    
+}else{
+    //ide jon ha nem teljesul a feltetel
+}
+
+console.log("0" == 0);
+
+console.log("0" === 0);
+//3db = haszn osszehasonlitasra
+
+//tömb/felsorolas - forciklussal lehet rajtuk vegigmenni
+const arr = [34, 15, 88, 2] //ez egy tomb, negyzetes zarojelrol ism fel
+
+for (let index = 0; index < arr.length; index++) {
+
+    console.log(arr[index])
+    
+}
+
+for (const item of arr) {
+    console.log(item)
+}
+//ez a 2 ugyanazt csinalja, a cikluson belul ugyanugy tudunk ifelni
