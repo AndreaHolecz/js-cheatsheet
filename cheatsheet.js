@@ -119,4 +119,4 @@ for (let index = 0; index < arr.length; index++) {
 for (const item of arr) {
     console.log(item)
 }
-//ez a 2 ugyanazt csinalja, a cikluson belul ugyanugy tudunk ifelni
+//*ez a 2 ugyanazt csinalja, a cikluson belul ugyanugy tudunk ifelni
