@@ -120,3 +120,4 @@ for (const item of arr) {
     console.log(item)
 }
 //*ez a 2 ugyanazt csinalja, a cikluson belul ugyanugy tudunk ifelni
+
