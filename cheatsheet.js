@@ -75,3 +75,12 @@ for (const item of arr) {
 }
 //*ez a 2 ugyanazt csinalja, a cikluson belul ugyanugy tudunk ifelni
 
+
+function nthSmallest(arr, pos){
+    //arr.sort(function(a, b){return a - b});
+    //arr.sort((a, b) => a - b); -ez a 2 ugyanaz
+    arr.sort((min, max) => min - max);
+    console.log(arr[pos-1])
+    return arr[pos-1]
+    //pos = position, azert minusz egy mert a 0. az elso elem
+}
