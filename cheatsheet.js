@@ -84,3 +84,12 @@ function nthSmallest(arr, pos){
     return arr[pos-1]
     //pos = position, azert minusz egy mert a 0. az elso elem
 }
+
+//Fill the getTheFirstGenre function to return the myMovie parameter's first genre from the genre key's array.
+function getTheFirstGenre(myMovie) {
+    //return genre[0]
+    console.log(myMovie)
+    return myMovie.genre[0]
+  }
+
+
