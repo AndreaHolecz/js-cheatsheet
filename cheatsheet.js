@@ -93,3 +93,32 @@ function getTheFirstGenre(myMovie) {
   }
 
 
+//ezek mind u.a-t csinajak
+
+
+function getSiteName(url) {
+    //console.log(typeof url);
+    //let x = url.substring(8).replace(".com", "");
+    ////let urlWithoutHttps = url.substring(8);
+    //return x.charAt(0).toUpperCase() + x.slice(1)
+    
+    //console.log(url.length -2)
+    //let x = url.substring(8, url.length -2)
+    //console.log(x)
+    console.log(url.length -4);
+    let x = url.substring(8, url.length -4);
+    console.log(x);
+    
+    console.log(x.toUpperCase())
+    console.log(x[0])
+    return x[0].toUpperCase() + x.substring(1)
+
+    //return x.charAt(0).toUpperCase() + x.slice(1)
+    //ez a ketto az elozo sorral detto u.a de ez jobb 
+    
+    //let x = url.substring(0, 5)
+    //console.log(x)
+    //return x[0].toUpperCase() + x.substring(1)
+  }
+  //a last 3 sor mar nem xD
+
