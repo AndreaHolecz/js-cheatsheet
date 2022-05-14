@@ -95,7 +95,7 @@ function getTheFirstGenre(myMovie) {
 
 //ezek mind u.a-t csinajak
 
-
+//qualified
 function getSiteName(url) {
     //console.log(typeof url);
     //let x = url.substring(8).replace(".com", "");
@@ -122,3 +122,26 @@ function getSiteName(url) {
   }
   //a last 3 sor mar nem xD
 
+  
+//qualified
+function getUserIdentifiers(users) {
+    console.log(Array.isArray(users), users)
+    //megvizsgáljuk h tömb-e a users paraméter értéke az Array.isArray-el
+    //a paraméter értékének a neve argumentum
+    let result = [];
+    for(const user of users){
+      //user helyett bármi másnak is elnevezhetem, olyan mint a for ciklusban az i
+      console.log(user.id)
+      let record = user.username + "@" + user.id;
+      //a record-ot is elnevezhetem bármire mint a user-t
+      let record2 = user.username + "@" + user.id + " vmi: ";
+  //ez igy ugyan az mint a record3-ben a hozzáadott dolog
+      //template literallal kovi sorba, ennek a 2-nek az eredménye u.a
+      let record3 = `${user.username}@${user.id} vmi: `
+      console.log(record2, record3)
+      //template literalnak az eredménye minden esetben string
+      result.push(record)
+      //push a végéhez hozzáadja az adott elemet ami a zárójelben meg van adva - itt a record
+    }
+    return result;
+  }
